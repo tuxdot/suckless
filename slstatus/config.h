@@ -70,8 +70,8 @@ static const char vol[]         = "[ `amixer sget Master | tail -n 1 | awk '{pri
 
 static const struct arg args[] = {
 	/* function		format          argument */
-	{ netspeed_rx,	"d: %s ",		"enp1s0f0u3" },	
-	{ netspeed_tx,	"< u: %s ",		"enp1s0f0u3" },	
+	{ netspeed_rx,	"d: %s ",		"enp5s0" },	
+	{ netspeed_tx,	"< u: %s ",		"enp5s0" },	
 	{ run_command,	"< vol: %s ",	vol },
 	{ cpu_perc,		"< cpu: %s%% ",	NULL },
 	{ ram_perc,		"< mem: %s%% ",	NULL },
